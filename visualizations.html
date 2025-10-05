@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visualizations | Aditya Devputra</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizations | Aditya Devputra</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Data Science Visualizations</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="visualizations.html">Visualizations</a>
-    </nav>
-  </header>
+    <header class="profile-header">
+        <h1>Data Science Visualizations</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>Visual Insights</h2>
-      <p>
-        These visualizations are derived from datasets on 
-        <a href="https://data.gov.in/" target="_blank">data.gov.in</a>.
-      </p>
+    <main class="container">
+        <section id="project-overview">
+            <h2>DS200 Assignment: Analysis of R&D Expenditure</h2>
+            <p>
+                This project analyzes <strong>Research & Development (R&D) expenditure</strong> across various economic sectors in India for the fiscal years <strong>2018–19 to 2020–21</strong>. The goal is to identify key trends, top-spending sectors, and the inequality in national R&D investment using Python libraries like pandas, matplotlib, and seaborn.
+            </p>
+            <p>
+                <strong>Data Source:</strong> <a href="https://data.gov.in/resource/research-and-development-expenditure-economic-activity" target="_blank">R&D Expenditure by Economic Activity – data.gov.in</a>
+            </p>
+            <a href="https://colab.research.google.com/drive/1qXXDXvaHxsZlkXd8hXsSXnbWVJEFKYnG?usp=sharing" target="_blank">
+                <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+            </a>
+        </section>
 
-      <div class="card">
-        <h3>Scatter Plot</h3>
-        <img src="https://raw.githubusercontent.com/adityadevputra/data-science-project/main/scatter.png" width="100%" alt="Scatter Plot">
-      </div>
+        <section id="visual-analysis">
+            <h2>Visual Insights and Inferences</h2>
 
-      <div class="card">
-        <h3>Box Plot</h3>
-        <img src="https://raw.githubusercontent.com/adityadevputra/data-science-project/main/boxplot.png" width="100%" alt="Box Plot">
-      </div>
+            <div class="card">
+                <h3>Scatter Plot: R&D Expenditure (2018–19 vs. 2019–20)</h3>
+                <img src="rd_scatter_plot.png" width="100%" alt="Scatter Plot of R&D Expenditure">
+                <div class="analysis-text">
+                    <p><strong>Observation:</strong> Most sectors lie close to the <em>y = x</em> line with a slight upward drift; one dominant outlier stands out.</p>
+                    <p><strong>Inference:</strong> Overall spending increased between years, with the <em>Professional, Scientific and Technical Activities</em> sector dominating investment.</p>
+                </div>
+            </div>
 
-      <div class="card">
-        <h3>Bar Plot</h3>
-        <img src="https://raw.githubusercontent.com/adityadevputra/data-science-project/main/bar.png" width="100%" alt="Bar Plot">
-      </div>
+            <div class="card">
+                <h3>Box Plot: Distribution of R&D Expenditure (2018–2021)</h3>
+                <img src="rd_box_plot.png" width="100%" alt="Box Plot of R&D Expenditure Distribution">
+                <div class="analysis-text">
+                    <p><strong>Observation:</strong> The data is highly right-skewed, showing a few sectors with very high spending compared to the rest.</p>
+                    <p><strong>Inference:</strong> R&D investment is heavily concentrated in select industries, revealing a significant inequality in national innovation funding across different sectors.</p>
+                </div>
+            </div>
 
-      <p style="text-align:center; margin-top:1rem;">
-        <a href="https://github.com/adityadevputra/data-science-project" class="btn">See Full Project on GitHub</a>
-      </p>
-    </section>
-  </main>
+            <div class="card">
+                <h3>Bar Chart: Top 10 Sectors by R&D Expenditure (2020–21)</h3>
+                <img src="rd_bar_chart.png" width="100%" alt="Bar Chart of Top R&D Sectors">
+                <div class="analysis-text">
+                    <p><strong>Observation:</strong> The <em>Professional, Scientific and Technical Activities</em> sector far outspends all others, followed by <em>Agriculture</em> and <em>Human Health</em> activities.</p>
+                    <p><strong>Inference:</strong> National priorities heavily favor scientific and technical R&D, with a notable and sustained emphasis on agriculture and healthcare.</p>
+                </div>
+            </div>
+            
+            <p style="text-align:center; margin-top: 2rem;">
+                <a href="https://github.com/adityadevputra/data-science-project" class="btn" target="_blank">See Full Project on GitHub</a>
+            </p>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Aditya Devputra</p>
-  </footer>
+        <section id="citation">
+            <h3>Citation</h3>
+            <p>Government of India. (2022). <em>R&D Expenditure by Economic Activity (2018–2021)</em>. Retrieved from data.gov.in.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aditya Devputra</p>
+    </footer>
 </body>
 </html>
