@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Devputra | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>My Portfolio</h1>
+    <h1>Aditya Devputra</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -16,18 +17,94 @@
   </header>
 
   <main>
+    <!-- About -->
     <section>
       <h2>About Me</h2>
-      <p>Hi, I’m Aditya. I am passionate about Data Science, Machine Learning, and AI.</p>
+      <p>
+        I’m <strong>Aditya Devputra</strong>, a postgraduate student at 
+        <strong>Indian Institute of Science (IISc), Bangalore</strong>, pursuing 
+        an <strong>M.Tech in Computational and Data Sciences</strong>. 
+        My work lies at the intersection of <strong>Machine Learning</strong>, 
+        <strong>Optimization</strong>, and <strong>Statistical Evaluation</strong>.
+      </p>
     </section>
 
+    <!-- Education -->
     <section>
-      <h2>Resume</h2>
-      <ul>
-        <li><strong>Education:</strong> B.Tech in Mechanical Engineering from IIT Bhubaneswar</li>
-        <li><strong>Skills:</strong> Python, PyTorch, Pandas, Matplotlib, PySpark</li>
-        <li><strong>Experience:</strong> Data Science Intern at Razorpay</li>
-      </ul>
+      <h2>Education</h2>
+      <div class="card">
+        <ul>
+          <li><strong>M.Tech in Computational and Data Sciences</strong>, IISc Bangalore (2024–2026) — CGPA: 9.00/10</li>
+          <li><strong>B.Tech in Mechanical Engineering</strong>, IIT Bhubaneswar (2013–2017) — CGPA: 8.97/10</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Data Science Intern — Razorpay (May 2025 – July 2025)</h3>
+        <p>
+          Developed reinforcement learning–based Multi-Armed Bandit algorithms to optimize 
+          decision-making in payment terminal sorting. Worked on offline policy evaluation 
+          and explored delayed-feedback correction techniques for improving model reliability.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>Highlighted Projects</h2>
+
+      <div class="card">
+        <h3>Tensor-Based Hyper-Graph Neural Networks (Ongoing)</h3>
+        <p>
+          Designing transformer-inspired tensor models to mitigate information loss 
+          in hypergraph reduction, introducing structure-aware embeddings.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Novel Indian Name Generator & English–Hindi Translator</h3>
+        <p>
+          Trained Neural N-gram and RNN models to generate Indian names; implemented 
+          LSTM Seq2Seq architecture with attention and BPE tokenizer for translation tasks.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Statistical Evaluation of DL vs. Traditional ML</h3>
+        <p>
+          Compared CNN/U-Net deep learning models with PCA–XGBoost pipelines 
+          for classification and segmentation on image datasets.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="card">
+        <ul>
+          <li><strong>Languages:</strong> Python, C++</li>
+          <li><strong>Libraries:</strong> PyTorch, Numpy, Pandas, PySpark</li>
+          <li><strong>Tools:</strong> Git, Matplotlib, Jupyter</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Contact</h2>
+      <p>
+        📧 <a href="mailto:ad14@iitbbs.ac.in">ad14@iitbbs.ac.in</a> | 
+        <a href="mailto:daditya@iisc.ac.in">daditya@iisc.ac.in</a><br />
+        📱 7008196708
+      </p>
+      <p>
+        <a href="resume.pdf" class="btn" target="_blank">View Full Resume</a>
+      </p>
     </section>
   </main>
 
