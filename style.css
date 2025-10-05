@@ -37,11 +37,8 @@ body {
 }
 
 section {
-    background: #ffffff;
+    /* background, border, padding, and border-radius removed to eliminate the box effect */
     margin-bottom: 30px;
-    padding: 30px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
 }
 
 /* Typography */
@@ -57,12 +54,10 @@ h2 {
     margin-top: 0;
 }
 
-/* Project Card Styling */
-.project-card {
-    border: 1px solid #eee;
-    padding: 20px;
+/* Card Styling Removed */
+.project-card, .card {
+    /* border, padding, and background removed to eliminate the box effect */
     margin-top: 20px;
-    border-radius: 5px;
 }
 
 /* Button & Link Styles */
