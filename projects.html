@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Aditya Devputra</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Aditya Devputra</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="visualizations.html">Visualizations</a>
-    </nav>
-  </header>
+    <header class="profile-header">
+        <h1>Academic & Personal Projects</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="visualizations.html">Visualizations</a>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>Data Science Projects</h2>
+    <main class="container">
+        <section id="projects-list">
+            <h2>Highlighted Projects</h2>
 
-      <div class="card">
-        <h3>R&D Expenditure Analysis</h3>
-        <p>
-          Analysis of India’s R&D expenditure across economic sectors (2018–2021) 
-          using Python for data cleaning, visualization, and trend analysis.
-        </p>
-        <p>
-          <a href="https://github.com/adityadevputra/data-science-project" class="btn">View on GitHub</a>
-        </p>
-      </div>
+            <div class="card">
+                <h3>Randomized M-SVD for Tensors</h3>
+                <p>
+                    This project explores low-rank tensor approximations using a randomized M-Singular Value Decomposition (RM-SVD) algorithm. We analyze the trade-offs between computational cost and reconstruction error by varying transform matrices (M) and random sampling strategies (W). The method's effectiveness is demonstrated on a facial recognition task, comparing its accuracy and runtime against traditional SVD and other randomized variants.
+                </p>
+                <p>
+                    <strong>Key Findings:</strong> An orthonormal transform (M) with a fully random sampling tensor (W) provided robust and accurate results for both tall and fat tensors, while an identity transform introduced bias in non-square cases.
+                </p>
+                <p>
+                    <a href="https://github.com/ad-dp/Tensor_project" class="btn" target="_blank">View on GitHub</a>
+                </p>
+            </div>
 
-      <div class="card">
-        <h3>District Education Performance Study</h3>
-        <p>
-          Comparative study of district-level education indicators in India using
-          PGI datasets and visualization tools like Matplotlib and Seaborn.
-        </p>
-      </div>
+            <div class="card">
+                <h3>Numerical Stability of ENSO Model</h3>
+                <p>
+                    An analysis of the Recharge-Discharge Oscillator model for ENSO prediction, focusing on numerical stability and computational efficiency. This study compares the performance of different Strong Stability Preserving (SSP) Runge-Kutta methods and floating-point precisions (float16 vs. float64). We evaluated the impact of time step resolution on error accumulation and overall runtime.
+                </p>
+                <p>
+                    <strong>Key Findings:</strong> Higher precision (float64) allows for the use of lower-order schemes without sacrificing accuracy, while lower precision (float16) is faster but more sensitive to round-off errors at smaller time steps.
+                </p>
+                <p>
+                    <a href="https://github.com/ad-dp/NSDE-project" class="btn" target="_blank">View on GitHub</a>
+                </p>
+            </div>
+            
+            <div class="card">
+                <h3>R&D Expenditure Analysis</h3>
+                <p>
+                  A data visualization project analyzing India’s R&D expenditure across economic sectors from 2018–2021. Used Python (Pandas, Matplotlib) for data cleaning, exploratory analysis, and to identify key investment trends.
+                </p>
+                <p>
+                    <a href="visualizations.html" class="btn">View Visualization</a>
+                    <a href="https://github.com/ad-dp/DS-200_data_science_project" class="btn" target="_blank">View on GitHub</a>
+                </p>
+            </div>
 
-      <div class="card">
-        <h3>Other Works</h3>
-        <p>Exploratory projects in machine learning and visualization pipelines.</p>
-      </div>
-    </section>
-  </main>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Aditya Devputra</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Aditya Devputra</p>
+    </footer>
 </body>
 </html>
